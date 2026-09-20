@@ -3,18 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#172554">
     <title>AK Exim and Trade Concern | Global Import & Export</title>
     <meta name="description" content="AK Exim and Trade Concern - Connecting Global Markets with Precision in Trade.">
-    
+
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    
+
     <!-- Custom Configuration for Tailwind -->
     <script>
         tailwind.config = {
@@ -27,11 +28,11 @@
                         navy: {
                             50: '#f0f4f8',
                             100: '#d9e2ec',
-                            800: '#1e3a8a', // Brighter navy from logo
-                            900: '#172554', // Deep navy
+                            800: '#1e3a8a',
+                            900: '#172554',
                         },
                         brandred: {
-                            500: '#ef4444', // Red from logo
+                            500: '#ef4444',
                             600: '#dc2626',
                         }
                     }
@@ -42,7 +43,7 @@
     <style>
         .hero-pattern {
             background-color: #172554;
-            background-image: linear-gradient(rgba(23, 37, 84, 0.85), rgba(23, 37, 84, 0.95)), url('https://images.unsplash.com/photo-1586528116311-ad8ed7c80a71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');
+            background-image: linear-gradient(rgba(23, 37, 84, 0.85), rgba(23, 37, 84, 0.95)), url('https://images.unsplash.com/photo-1586528116311-ad8ed7c80a71?ixlib=rb-4.0.3&auto=format&fit=crop&w=1600&q=80');
             background-size: cover;
             background-position: center;
             background-attachment: fixed;
@@ -52,14 +53,14 @@
 <body class="font-sans text-gray-800 bg-gray-50 antialiased selection:bg-brandred-500 selection:text-white">
 
     <!-- Navigation -->
-    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300" id="navbar">
+    <nav class="fixed w-full z-50 bg-white/95 backdrop-blur-sm shadow-md transition-all duration-300" id="navbar" aria-label="Main navigation">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-20 items-center">
                 <!-- Logo -->
-                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo(0,0)">
-                    <img src="AKLogo.jpg" alt="AK Exim and Trade Concern Logo" class="h-14 w-auto drop-shadow-sm">
+                <div class="flex-shrink-0 flex items-center cursor-pointer" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Scroll to top">
+                    <img src="AKLogo.jpg" alt="AK Exim and Trade Concern Logo" class="h-14 w-auto drop-shadow-sm" loading="eager">
                 </div>
-                
+
                 <!-- Desktop Menu -->
                 <div class="hidden md:flex space-x-8 items-center">
                     <a href="#home" class="text-navy-900 hover:text-brandred-600 font-medium transition-colors">Home</a>
@@ -102,20 +103,22 @@
                     "Connecting Global Markets with Precision in Trade"
                 </p>
                 <div class="flex flex-col sm:flex-row justify-center gap-4">
-                    <a href="#services" class="flex items-center justify-center gap-2 bg-brandred-600 text-white hover:bg-brandred-500 px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg hover:-translate-y-1">
+                    <a href="#services" class="flex items-center justify-center gap-2 bg-brandred-600 text-white hover:bg-brandred-500 px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
+                        <i class="fa-solid fa-arrow-right"></i>
                         Our Services
                     </a>
-                    <a href="#contact" class="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-navy-900 px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg hover:-translate-y-1">
+                    <a href="#contact" class="flex items-center justify-center gap-2 bg-transparent border-2 border-white text-white hover:bg-white hover:text-navy-900 px-8 py-4 rounded-md font-semibold text-lg transition-all shadow-lg hover:shadow-xl">
+                        <i class="fa-solid fa-phone"></i>
                         Contact Us
                     </a>
                 </div>
             </div>
         </div>
-        
+
         <!-- Decorative bottom wave -->
         <div class="absolute bottom-0 left-0 w-full overflow-hidden leading-none">
             <svg class="relative block w-full h-12 md:h-24" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,130.83,127.32,201.39,114.58Z" class="fill-gray-50"></path>
+                <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V120H0V95.8C59.71,118.08,119.53,128.95,178.53,124c59,-4.94,121.76,-26.21,184.3,-51.31,55.27,-22.08,112.45,-31.13,171.52,-30.2C573.64,43.37,629.02,50.86,684.09,66.1c63.73,17.74,135.1,24.59,193.55,15.66,53.2,-8.08,104.34,-31.6,152.78,-55.25,39.2,-19.15,83.31,-35.33,128.52,-34.34,54.16,1.19,103.34,29.3,138.91,56.25V120H321.39Z" fill="#f8fafc"></path>
             </svg>
         </div>
     </section>
@@ -126,10 +129,10 @@
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
                 <!-- Image Side -->
                 <div class="relative rounded-2xl overflow-hidden shadow-2xl group border-4 border-white">
-                    <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Business Meeting" class="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-700">
+                    <img src="https://images.unsplash.com/photo-1554774853-719586f82d77?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80" alt="Business Meeting" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105">
                     <div class="absolute inset-0 bg-navy-900/10 group-hover:bg-transparent transition-colors duration-500"></div>
                 </div>
-                
+
                 <!-- Text Side -->
                 <div>
                     <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-red-100 text-brandred-600 font-semibold text-sm mb-6 border border-red-200">
@@ -140,9 +143,9 @@
                         Your Trusted Partner in <span class="text-brandred-600">Global Commerce</span>
                     </h2>
                     <p class="text-gray-600 mb-6 text-lg leading-relaxed">
-                        Under the leadership of Managing Director <strong>Ashish Khatri</strong>, AK Exim and Trade Concern has established itself as a premier trading entity. We specialize in sourcing and supplying high-quality products to meet the evolving demands of the market.
+                        Under the leadership of Managing Director <strong>Ashish Khatri</strong>, AK Exim and Trade Concern has established itself as a premier trading entity. We specialize in sourcing, importing, and distributing premium consumer goods that meet the evolving needs of Nepalese households and businesses.
                     </p>
-                    
+
                     <div class="bg-white p-6 rounded-xl shadow-sm border border-gray-100 mb-8">
                         <h3 class="font-bold text-navy-900 text-lg mb-3 border-b pb-2">Official Registration Details</h3>
                         <ul class="space-y-3">
@@ -160,9 +163,9 @@
                             </li>
                         </ul>
                     </div>
-                    
+
                     <a href="#documents" class="inline-flex items-center gap-2 font-semibold text-brandred-600 hover:text-navy-900 transition-colors group">
-                        View Official Documents 
+                        View Official Documents
                         <i class="fa-solid fa-arrow-down transform group-hover:translate-y-1 transition-transform"></i>
                     </a>
                 </div>
@@ -240,7 +243,7 @@
                 <!-- Document 1: Visiting Card -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <div class="w-full bg-white p-3 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-                        <img src="final-04.jpg" alt="AK Exim Visiting Card" class="w-full h-auto rounded-xl object-contain border border-gray-100">
+                        <img src="final-04.jpg" alt="AK Exim Visiting Card" class="w-full h-auto rounded-xl object-contain border border-gray-100" loading="lazy">
                     </div>
                     <h4 class="mt-6 text-lg font-bold text-navy-900">Official Visiting Card</h4>
                     <p class="text-gray-500 text-sm">Contact details & leadership</p>
@@ -249,7 +252,7 @@
                 <!-- Document 2: PAN Certificate -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <div class="w-full bg-white p-3 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-                        <img src="Company PAN.jpg" alt="Company PAN Certificate" class="w-full h-auto rounded-xl object-contain border border-gray-100">
+                        <img src="Company%20PAN.jpg" alt="Company PAN Certificate" class="w-full h-auto rounded-xl object-contain border border-gray-100" loading="lazy">
                     </div>
                     <h4 class="mt-6 text-lg font-bold text-navy-900">PAN Certificate</h4>
                     <p class="text-gray-500 text-sm">Tax registration (PAN: 115802098)</p>
@@ -258,7 +261,7 @@
                 <!-- Document 3: Registration Certificate -->
                 <div class="flex flex-col items-center group cursor-pointer">
                     <div class="w-full bg-white p-3 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300 transform group-hover:-translate-y-2">
-                        <img src="Company Reg.jpg" alt="Company Registration Certificate" class="w-full h-auto rounded-xl object-contain border border-gray-100">
+                        <img src="Company%20Reg.jpg" alt="Company Registration Certificate" class="w-full h-auto rounded-xl object-contain border border-gray-100" loading="lazy">
                     </div>
                     <h4 class="mt-6 text-lg font-bold text-navy-900">Company Registration</h4>
                     <p class="text-gray-500 text-sm">Govt. of Nepal authorization</p>
@@ -326,22 +329,22 @@
                             <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-gray-700 mb-2">Full Name *</label>
-                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 transition-colors outline-none" placeholder="Your Name">
+                                    <input type="text" id="name" name="name" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 outline-none transition">
                                 </div>
                                 <div>
                                     <label for="email" class="block text-sm font-medium text-gray-700 mb-2">Email Address *</label>
-                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 transition-colors outline-none" placeholder="your@email.com">
+                                    <input type="email" id="email" name="email" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 outline-none transition">
                                 </div>
                             </div>
-                            
+
                             <div>
                                 <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">Subject</label>
-                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 transition-colors outline-none" placeholder="Inquiry Subject">
+                                <input type="text" id="subject" name="subject" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 outline-none transition">
                             </div>
 
                             <div>
                                 <label for="message" class="block text-sm font-medium text-gray-700 mb-2">Message *</label>
-                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 transition-colors outline-none resize-none" placeholder="How can we help you?"></textarea>
+                                <textarea id="message" name="message" rows="4" required class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:ring-2 focus:ring-brandred-600 focus:border-brandred-600 outline-none transition"></textarea>
                             </div>
 
                             <button type="submit" class="w-full bg-brandred-600 text-white font-bold py-4 rounded-lg hover:bg-brandred-700 transition-colors shadow-lg flex justify-center items-center gap-2">
@@ -359,12 +362,12 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="md:col-span-2">
-                    <img src="AKLogo.jpg" alt="AK Exim Logo" class="h-12 w-auto mb-4 grayscale brightness-200 opacity-80">
+                    <img src="AKLogo.jpg" alt="AK Exim Logo" class="h-12 w-auto mb-4 grayscale brightness-200 opacity-80" loading="lazy">
                     <p class="max-w-md text-sm leading-relaxed">
                         Connecting Global Markets with Precision in Trade. Your trusted partner for importing and distributing high-quality consumer goods in Nepal.
                     </p>
                 </div>
-                
+
                 <div>
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Quick Links</h4>
                     <ul class="space-y-2 text-sm">
@@ -379,11 +382,11 @@
                     <h4 class="text-white font-bold mb-4 uppercase text-sm tracking-wider">Contact Info</h4>
                     <ul class="space-y-2 text-sm">
                         <li><a href="mailto:akeximtradeconcern@gmail.com" class="hover:text-brandred-400 transition-colors"><i class="fa-solid fa-envelope mr-2"></i>Email Us</a></li>
-                        <li><a href="https://wa.me/9779805730148" class="hover:text-brandred-400 transition-colors"><i class="fa-brands fa-whatsapp mr-2"></i>+977-9805730148</a></li>
+                        <li><a href="https://wa.me/9779805730148" class="hover:text-brandred-400 transition-colors" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp mr-2"></i>+977-9805730148</a></li>
                     </ul>
                 </div>
             </div>
-            
+
             <div class="pt-8 border-t border-gray-800 text-sm text-center md:text-left flex flex-col md:flex-row justify-between items-center">
                 <p>&copy; <span id="year"></span> AK Exim and Trade Concern. All rights reserved.</p>
                 <p class="mt-2 md:mt-0">Managing Director: Ashish Khatri</p>
@@ -393,48 +396,51 @@
 
     <!-- Interactive Scripts -->
     <script>
-        // Set current year in footer
         document.getElementById('year').textContent = new Date().getFullYear();
 
-        // Mobile Menu Toggle
         const mobileBtn = document.getElementById('mobile-menu-btn');
         const mobileMenu = document.getElementById('mobile-menu');
         const mobileLinks = document.querySelectorAll('.mobile-link');
-        const menuIcon = mobileBtn.querySelector('i');
 
-        function toggleMenu() {
-            mobileMenu.classList.toggle('hidden');
-            if(mobileMenu.classList.contains('hidden')) {
-                menuIcon.classList.remove('fa-xmark');
-                menuIcon.classList.add('fa-bars');
-            } else {
-                menuIcon.classList.remove('fa-bars');
-                menuIcon.classList.add('fa-xmark');
+        if (mobileBtn && mobileMenu) {
+            const menuIcon = mobileBtn.querySelector('i');
+
+            function toggleMenu() {
+                mobileMenu.classList.toggle('hidden');
+                if (menuIcon) {
+                    if (mobileMenu.classList.contains('hidden')) {
+                        menuIcon.classList.remove('fa-xmark');
+                        menuIcon.classList.add('fa-bars');
+                    } else {
+                        menuIcon.classList.remove('fa-bars');
+                        menuIcon.classList.add('fa-xmark');
+                    }
+                }
             }
+
+            mobileBtn.addEventListener('click', toggleMenu);
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        toggleMenu();
+                    }
+                });
+            });
         }
 
-        mobileBtn.addEventListener('click', toggleMenu);
-
-        // Close mobile menu when clicking a link
-        mobileLinks.forEach(link => {
-            link.addEventListener('click', () => {
-                if (!mobileMenu.classList.contains('hidden')) {
-                    toggleMenu();
+        const navbar = document.getElementById('navbar');
+        if (navbar) {
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 20) {
+                    navbar.classList.add('shadow-md');
+                    navbar.classList.replace('bg-white/95', 'bg-white/100');
+                } else {
+                    navbar.classList.remove('shadow-md');
+                    navbar.classList.replace('bg-white/100', 'bg-white/95');
                 }
             });
-        });
-
-        // Navbar scroll effect
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 20) {
-                navbar.classList.add('shadow-md');
-                navbar.classList.replace('bg-white/95', 'bg-white/100');
-            } else {
-                navbar.classList.remove('shadow-md');
-                navbar.classList.replace('bg-white/100', 'bg-white/95');
-            }
-        });
+        }
     </script>
 </body>
 </html>
